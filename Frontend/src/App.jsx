@@ -66,7 +66,7 @@ const App = () => {
 
   const fetchChatHistory = async () => {
     try {
-      const response = await fetch('https://chatgpt-backend-beta.vercel.app/chats');
+      const response = await fetch('http://localhost:4000/chats');
       if (response.ok) {
         const history = await response.json();
         setChatHistory(history);
@@ -87,7 +87,7 @@ const App = () => {
 
   const loadChat = async (chatId) => {
     try {
-      const response = await fetch(`https://chatgpt-backend-beta.vercel.app/chat/${chatId}`);
+      const response = await fetch(`http://localhost:4000/chat/${chatId}`);
       if (response.ok) {
         const chatData = await response.json();
         setCurrentChatId(chatId);
@@ -105,7 +105,7 @@ const App = () => {
 
   const deleteChat = async (chatId) => {
     try {
-      const response = await fetch(`https://chatgpt-backend-beta.vercel.app/chat/${chatId}`, {
+      const response = await fetch(`http://localhost:4000/chat/${chatId}`, {
         method: 'DELETE',
       });
       
@@ -144,7 +144,7 @@ const App = () => {
         setCurrentChatId(chatId);
       }
 
-      const response = await fetch('https://chatgpt-backend-beta.vercel.app/chat', {
+      const response = await fetch('http://localhost:4000/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
