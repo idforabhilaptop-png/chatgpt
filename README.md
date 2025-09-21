@@ -2,11 +2,11 @@
 
 A modern, full-stack chat application with ChatGPT-inspired dark UI featuring real-time messaging, typing effects, and chat history management.
 
- 🌐 Live Demo
+## 🌐 Live Demo
 
-🚀 [Try it Live](https://chatgpt-frontend-p8ce.onrender.com/)**
+**🚀 [Try it Live](https://chatgpt-frontend-p8ce.onrender.com/)**
 
-🚀 Features
+## 🚀 Features
 
 - **Dark Theme UI** - Professional ChatGPT-style interface
 - **Typing Animation** - Real-time typewriter effect for responses
@@ -24,28 +24,28 @@ A modern, full-stack chat application with ChatGPT-inspired dark UI featuring re
 ## 📦 Installation
 
 ### Backend Setup
-bash
+```bash
 git clone <repository-url>
 cd backend
 npm install express cors mongoose dotenv
 npm start
-
+```
 
 ### Frontend Setup
-bash
+```bash
 cd frontend
 npx create-react-app .
 npm install lucide-react tailwindcss
 npm start
-
+```
 
 ## 🔧 Environment Variables
 
-env
+```env
 # Backend (.env)
 MONGODB_URI=your_mongodb_connection_string
 PORT=4000
-
+```
 
 ## 🎨 UI Features
 
@@ -58,3 +58,6 @@ PORT=4000
 
 **Frontend**: [https://chatgpt-frontend-p8ce.onrender.com/](https://chatgpt-frontend-p8ce.onrender.com/)  
 **Backend**: [https://chatgpt-2-hvro.onrender.com](https://chatgpt-2-hvro.onrender.com)
+
+
+**Made with ❤️ using React, Node.js, and MongoDB**
