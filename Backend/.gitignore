@@ -134,7 +134,7 @@ db/
 config.json
 config.js
 secrets.json
-vercel.json
+
 
 # Build directories
 build/
